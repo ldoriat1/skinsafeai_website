@@ -5,44 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SkinSafeAi</title>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <!-- Bootstrap CSS (Optional) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts (Optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <img src="assets/images/logo.png" alt="SkinSafeAi Logo" width="150">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Services</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
-  <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="text-center">
-      <img src="assets/images/logo.png" alt="SkinSafeAi Logo" class="mb-4" width="150">
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <img src="assets/images/logo.png" alt="SkinSafeAi Logo" class="hero-logo">
       <h1>Revolutionizing Skin Safety with AI-Powered Solutions</h1>
-      <a href="#contact" class="btn btn-primary mt-3">Get Started</a>
+      <a href="#contact" class="btn-primary">Get Started</a>
     </div>
   </section>
 
   <!-- About Us Section -->
-  <section id="about" class="container my-5">
-    <h2>About SkinSafeAi</h2>
-    <p>At SkinSafeAi, we leverage cutting-edge artificial intelligence to provide personalized skincare solutions, ensuring your skin stays healthy and radiant.</p>
-    <p>Our mission is to make advanced skin analysis accessible to everyone, empowering individuals to take control of their skin health.</p>
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About SkinSafeAi</h2>
+      <p>At SkinSafeAi, we leverage cutting-edge artificial intelligence to provide personalized skincare solutions, ensuring your skin stays healthy and radiant.</p>
+      <p>Our mission is to make advanced skin analysis accessible to everyone, empowering individuals to take control of their skin health.</p>
+    </div>
   </section>
 
   <!-- Features/Services Section -->
-  <section id="features" class="bg-light py-5">
+  <section id="features" class="features-section">
     <div class="container">
       <h2>Our Services</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="assets/images/ai-analysis-icon.png" alt="AI Skin Analysis" class="mb-3" width="50">
+      <div class="features-grid">
+        <div class="feature-item">
+          <img src="assets/images/ai-analysis-icon.png" alt="AI Skin Analysis" class="feature-icon">
           <h3>AI Skin Analysis</h3>
           <p>Advanced algorithms to assess your skin's health accurately.</p>
         </div>
-        <div class="col-md-4">
-          <img src="assets/images/personalized-plans-icon.png" alt="Personalized Skincare Plans" class="mb-3" width="50">
+        <div class="feature-item">
+          <img src="assets/images/personalized-plans-icon.png" alt="Personalized Skincare Plans" class="feature-icon">
           <h3>Personalized Skincare Plans</h3>
           <p>Customized recommendations tailored to your unique skin needs.</p>
         </div>
-        <div class="col-md-4">
-          <img src="assets/images/real-time-monitoring-icon.png" alt="Real-Time Monitoring" class="mb-3" width="50">
+        <div class="feature-item">
+          <img src="assets/images/real-time-monitoring-icon.png" alt="Real-Time Monitoring" class="feature-icon">
           <h3>Real-Time Monitoring</h3>
           <p>Continuous tracking of your skin condition with instant alerts.</p>
         </div>
@@ -51,70 +69,90 @@
   </section>
 
   <!-- How It Works Section -->
-  <section id="how-it-works" class="container my-5">
-    <h2>How It Works</h2>
-    <ol>
-      <li><strong>Upload a Photo:</strong> Users upload a selfie or skin image.</li>
-      <li><strong>AI Analysis:</strong> Our AI evaluates the skin condition.</li>
-      <li><strong>Receive Recommendations:</strong> Get personalized skincare advice.</li>
-    </ol>
+  <section id="how-it-works" class="how-it-works-section">
+    <div class="container">
+      <h2>How It Works</h2>
+      <ol class="steps">
+        <li>
+          <strong>Upload a Photo:</strong>
+          <p>Users upload a selfie or skin image.</p>
+        </li>
+        <li>
+          <strong>AI Analysis:</strong>
+          <p>Our AI evaluates the skin condition.</p>
+        </li>
+        <li>
+          <strong>Receive Recommendations:</strong>
+          <p>Get personalized skincare advice.</p>
+        </li>
+      </ol>
+    </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section id="testimonials" class="bg-light py-5">
+  <section id="testimonials" class="testimonials-section">
     <div class="container">
       <h2>What Our Clients Say</h2>
-      <blockquote class="blockquote">
+      <div class="testimonial">
         <p>"SkinSafeAi transformed my skincare routine with its personalized recommendations!"</p>
-        <footer class="blockquote-footer">- Client A</footer>
-      </blockquote>
-      <blockquote class="blockquote">
+        <footer>- Client A</footer>
+      </div>
+      <div class="testimonial">
         <p>"The AI skin analysis is incredibly accurate and user-friendly."</p>
-        <footer class="blockquote-footer">- Client B</footer>
-      </blockquote>
+        <footer>- Client B</footer>
+      </div>
     </div>
   </section>
 
   <!-- Call to Action Section -->
-  <section id="cta" class="text-center my-5">
-    <h2>Ready to Transform Your Skin Health?</h2>
-    <a href="#contact" class="btn btn-primary">Get Started</a>
+  <section id="cta" class="cta-section">
+    <div class="container">
+      <h2>Ready to Transform Your Skin Health?</h2>
+      <a href="#contact" class="btn-primary">Get Started</a>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="container my-5">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" name="name" required>
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="_replyto" required>
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-3">
-    <p>&copy; 2024 SkinSafeAi. All rights reserved.</p>
-    <p>
-      <a href="#hero">Home</a> | 
-      <a href="#about">About</a> | 
-      <a href="#features">Services</a> | 
-      <a href="#contact">Contact</a>
-    </p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 SkinSafeAi. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://facebook.com/skinsafeai" target="_blank" aria-label="Facebook">FB</a>
+        <a href="https://twitter.com/skinsafeai" target="_blank" aria-label="Twitter">TW</a>
+        <a href="https://instagram.com/skinsafeai" target="_blank" aria-label="Instagram">IG</a>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#features">Services</a> |
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- Bootstrap JS (Optional) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
+  <!-- Optional JavaScript -->
   <script src="assets/js/scripts.js"></script>
 </body>
 </html>
