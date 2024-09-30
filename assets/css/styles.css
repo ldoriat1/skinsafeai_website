@@ -34,11 +34,12 @@
     max-width: 100%;
     height: auto;
     filter: grayscale(100%);
-    transition: filter 0.3s ease;
+    transition: filter 0.3s ease, transform 0.3s ease;
   }
   
   .supporter img:hover {
     filter: grayscale(0%);
+    transform: scale(1.05);
   }
   
   /* Responsive Adjustments */
